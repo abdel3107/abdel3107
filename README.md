@@ -1,16 +1,38 @@
-## Hi there 👋
+### Hi there 👋, I'm Pouotouo Abdel Zidane
+I'm a software engineering student at National Polytechnique Douala, Cameroon. I'm passionate about backend development, Flutter, machine learning, and open-source projects. I'm constantly improving my skills and working on projects to impact society positively.
 
-<!--
-**abdel3107/abdel3107** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+---
 
-Here are some ideas to get you started:
+### 🛠 Tech Stack
+- **Languages**: Python, Dart, Java, Kotlin
+- **Frameworks & Libraries**: Spring Boot, Django, Flask, Flutter
+- **Databases**: PostgreSQL
+- **Tools**: Docker, Git, Keycloak, Figma
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![Python](https://img.shields.io/badge/-Python-333?style=flat&logo=python)
+![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-333?style=flat&logo=spring-boot)
+![Flutter](https://img.shields.io/badge/-Flutter-333?style=flat&logo=flutter)
+
+---
+
+### 💻 Current Projects
+- **Medifax Delivery App**: A delivery platform connecting stores (pharmacies, bakeries) with customers.
+
+---
+
+### 🎯 Goals
+- Specialize in backend development with Django and Spring Boot.
+- Learn more about machine learning and integrate AI into my projects.
+- Contribute to open-source projects.
+
+---
+
+### 📊 GitHub Stats
+
+![Pouotouo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=abdel3107&show_icons=true&theme=radical)
+
+---
+
+### 📫 Get in Touch
+- LinkedIn: [Pouotouo Abdel Zidane](https://www.linkedin.com/in/pouotouo/)
+- Email: [abdelzidane3107@gmail.com](mailto:abdelzidane3107@gmail.com)
