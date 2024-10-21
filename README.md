@@ -29,7 +29,7 @@ I'm a software engineering student at National Polytechnique Douala, Cameroon. I
 
 ### 📊 GitHub Stats
 
-![Pouotouo's GitHub Stats](https://github-readme-stats.vercel.app/api?username=abdel3107&show_icons=true&theme=radical)
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=abdel3107&show_icons=true&theme=radical)
 
 ---
 
