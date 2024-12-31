@@ -45,5 +45,6 @@ I'm a software engineering student at National Polytechnique Douala, Cameroon. I
 ---
 
 ### 📫 Get in Touch
+- Portfolio: [www.pouotouo.engineer](https://www.pouotouo.engineer)
 - LinkedIn: [Pouotouo Abdel Zidane](https://www.linkedin.com/in/pouotouo/)
 - Email: [abdelzidane3107@gmail.com](mailto:abdelzidane3107@gmail.com)
