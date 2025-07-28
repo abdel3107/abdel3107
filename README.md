@@ -1,5 +1,5 @@
 ### Hi there 👋, I'm Pouotouo Abdel Zidane
-I'm a software engineering student at National Polytechnique Douala, Cameroon. I'm passionate about backend development, Flutter, machine learning, and open-source projects. I'm constantly improving my skills and working on projects to impact society positively.
+I'm a software engineer,  ex-student at National Polytechnique Douala, Cameroon. I'm passionate about backend development, Flutter, machine learning, and open-source projects. I'm constantly improving my skills and working on projects to impact society positively.
 
 ---
 
