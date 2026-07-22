@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" width="1280" height="340" fill="none" role="img" aria-label="Pouotouo Abdel Zidane — Software Engineer">
+  <defs>
+    <linearGradient id="bgd" x1="0" y1="0" x2="1280" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0D0E2B"/>
+      <stop offset="0.52" stop-color="#151845"/>
+      <stop offset="1" stop-color="#221B52"/>
+    </linearGradient>
+    <linearGradient id="indigod" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6B62F0"/>
+      <stop offset="1" stop-color="#4E43D8"/>
+    </linearGradient>
+    <linearGradient id="inkd" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#BDB6FF"/>
+    </linearGradient>
+    <pattern id="gridd" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.05"/>
+    </pattern>
+    <filter id="softd" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="46"/>
+    </filter>
+    <filter id="shadowd" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="roundd"><rect width="1280" height="340" rx="26"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#roundd)" font-family="'Poppins','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif">
+    <rect width="1280" height="340" fill="url(#bgd)"/>
+    <circle cx="140" cy="30" r="150" fill="#1E6F4E" opacity="0.42" filter="url(#softd)"/>
+    <circle cx="1200" cy="330" r="170" fill="#4A3FB0" opacity="0.55" filter="url(#softd)"/>
+    <rect width="1280" height="340" fill="url(#gridd)"/>
+
+    <!-- Left: identity -->
+    <text x="74" y="108" font-size="15" font-weight="700" letter-spacing="3.2" fill="#9D95F5">SOFTWARE ENGINEER · DOUALA, CAMEROON</text>
+    <text x="72" y="172" font-size="52" font-weight="800" letter-spacing="-0.5" fill="url(#inkd)">Pouotouo Abdel Zidane</text>
+    <text x="74" y="212" font-size="21" font-weight="600" fill="#C3C8E6">Backend Systems &#160;•&#160; Flutter Apps &#160;•&#160; Machine Learning</text>
+    <text x="74" y="242" font-size="15" font-weight="500" fill="#9096B8">Building reliable software with clean architecture — for real-world impact.</text>
+
+    <!-- Availability chip -->
+    <g transform="translate(72,262)">
+      <rect width="262" height="40" rx="20" fill="#13331F"/>
+      <circle cx="24" cy="20" r="5.5" fill="#43E0A0">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="42" y="25" font-size="14" font-weight="700" fill="#5FE0A2">Open to opportunities &amp; collaboration</text>
+    </g>
+
+    <!-- Right: Zekora-style dashboard motif -->
+    <g transform="translate(918,0)">
+      <rect x="0" y="82" width="292" height="150" rx="20" fill="url(#indigod)" filter="url(#shadowd)"/>
+      <rect x="22" y="104" width="150" height="12" rx="6" fill="#FFFFFF" opacity="0.3"/>
+      <text x="22" y="168" font-size="40" font-weight="800" fill="#FFFFFF">&lt;/&gt;</text>
+      <rect x="22" y="186" width="96" height="16" rx="8" fill="#FFFFFF" opacity="0.26"/>
+      <rect x="130" y="186" width="60" height="16" rx="8" fill="#FFFFFF" opacity="0.18"/>
+
+      <g transform="translate(196,58)" filter="url(#shadowd)">
+        <rect width="116" height="42" rx="21" fill="#182A4A"/>
+        <path d="M20 26 L27 17 L34 26" fill="none" stroke="#43E0A0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="46" y="27" font-size="15" font-weight="800" fill="#5FE0A2">12%</text>
+      </g>
+
+      <g>
+        <rect x="8"   y="272" width="28" height="34" rx="6" fill="#6B62F0" opacity="0.7"/>
+        <rect x="48"  y="256" width="28" height="50" rx="6" fill="#6B62F0" opacity="0.78"/>
+        <rect x="88"  y="264" width="28" height="42" rx="6" fill="#6B62F0" opacity="0.74"/>
+        <rect x="128" y="240" width="28" height="66" rx="6" fill="#7C74F4"/>
+        <rect x="168" y="250" width="28" height="56" rx="6" fill="#7C74F4"/>
+        <rect x="208" y="228" width="28" height="78" rx="6" fill="#8F88FF"/>
+      </g>
+    </g>
+
+    <rect x="1" y="1" width="1278" height="338" rx="25" fill="none" stroke="#6B62F0" stroke-opacity="0.18" stroke-width="1.5"/>
+  </g>
+</svg>

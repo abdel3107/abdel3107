@@ -1,6 +1,16 @@
 <div align="center">
 
 <a href="https://www.pouotouo.engineer">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/zekora-hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/zekora-hero.svg" />
+    <img src="./assets/zekora-hero.svg" alt="Pouotouo Abdel Zidane — Software Engineer" width="100%" />
+  </picture>
+</a>
+
+<br/>
+
+<a href="https://www.pouotouo.engineer">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6EA8FE&center=true&vCenter=true&width=520&lines=Hi+%F0%9F%91%8B+I'm+Pouotouo+Abdel+Zidane;Software+Engineer;Backend+Developer;Flutter+Developer;Machine+Learning+Enthusiast" alt="Pouotouo Abdel Zidane" />
 </a>
 
