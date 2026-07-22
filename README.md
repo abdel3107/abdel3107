@@ -83,16 +83,12 @@ Most of my work is on the backend — the information systems, web platforms and
 
 <div align="center">
 
-<img height="165" src="https://grs-abdel3107.vercel.app/api?username=abdel3107&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats" />
-<img height="165" src="https://grs-abdel3107.vercel.app/api/top-langs/?username=abdel3107&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top languages" />
+<img height="165" src="https://stats-eight-beryl.vercel.app/api?username=abdel3107&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats" />
+<img height="165" src="https://stats-eight-beryl.vercel.app/api/top-langs/?username=abdel3107&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top languages" />
 
 <br/>
 
 <img src="https://streak-stats.demolab.com/?user=abdel3107&hide_border=true&theme=tokyonight" alt="GitHub streak" />
-
-<br/>
-
-<img src="https://trophy-abdel3107.vercel.app/?username=abdel3107&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub trophies" />
 
 </div>
 
