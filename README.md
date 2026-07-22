@@ -1,17 +1,7 @@
 <div align="center">
 
 <a href="https://www.pouotouo.engineer">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/zekora-hero-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/zekora-hero.svg" />
-    <img src="./assets/zekora-hero.svg" alt="Pouotouo Abdel Zidane — Software Engineer" width="100%" />
-  </picture>
-</a>
-
-<br/>
-
-<a href="https://www.pouotouo.engineer">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6EA8FE&center=true&vCenter=true&width=560&lines=Hi+%F0%9F%91%8B+I'm+Pouotouo+Abdel+Zidane;Software+Engineer;Backend+%26+Systems+Developer;I+help+businesses+go+digital;Websites+%26+Custom+Software" alt="Pouotouo Abdel Zidane" />
+  <img src="./assets/banner.jpg" alt="Abdel Zidane — Software Engineer · Driven by faith, fueled by innovation" width="100%" />
 </a>
 
 <p>
@@ -93,8 +83,8 @@ Most of my work is on the backend — the information systems, web platforms and
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=abdel3107&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abdel3107&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top languages" />
+<img height="165" src="https://grs-abdel3107.vercel.app/api?username=abdel3107&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats" />
+<img height="165" src="https://grs-abdel3107.vercel.app/api/top-langs/?username=abdel3107&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="Top languages" />
 
 <br/>
 
@@ -102,7 +92,7 @@ Most of my work is on the backend — the information systems, web platforms and
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=abdel3107&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub trophies" />
+<img src="https://trophy-abdel3107.vercel.app/?username=abdel3107&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="GitHub trophies" />
 
 </div>
 
