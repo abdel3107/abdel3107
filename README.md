@@ -11,7 +11,7 @@
 <br/>
 
 <a href="https://www.pouotouo.engineer">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6EA8FE&center=true&vCenter=true&width=520&lines=Hi+%F0%9F%91%8B+I'm+Pouotouo+Abdel+Zidane;Software+Engineer;Backend+Developer;Flutter+Developer;Machine+Learning+Enthusiast" alt="Pouotouo Abdel Zidane" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6EA8FE&center=true&vCenter=true&width=560&lines=Hi+%F0%9F%91%8B+I'm+Pouotouo+Abdel+Zidane;Software+Engineer;Backend+%26+Systems+Developer;I+help+businesses+go+digital;Websites+%26+Custom+Software" alt="Pouotouo Abdel Zidane" />
 </a>
 
 <p>
@@ -26,12 +26,14 @@
 
 ### 👨‍💻 About Me
 
-Software engineer based in **Douala, Cameroon**, ex-student at the **National Polytechnic School of Douala (ENSPD)**. I build reliable backend systems and polished mobile apps, and I'm passionate about backend development, Flutter, and machine learning. I care about writing software that has a positive, tangible impact on society — and I'm constantly sharpening my craft in the open.
+I'm a software engineer from **Douala, Cameroon**, and I studied at the **National Polytechnic School of Douala (ENSPD)**.
 
-- 🔭 &nbsp;**Currently building** — backend services & cross-platform mobile apps
-- 🌱 &nbsp;**Learning** — machine learning / AI integration and cloud (AWS)
-- 💬 &nbsp;**Ask me about** — Spring Boot, Django, Flutter, PostgreSQL, REST API design
-- 🎯 &nbsp;**Focus** — clean architecture, open-source contribution, shipping useful products
+Most of my work is on the backend — the information systems, web platforms and custom tools that a business actually runs on. What I enjoy most is taking a messy, manual way of doing things (spreadsheets, paper, a Facebook page) and turning it into software that fits how people already work. I build for the long run: things that are still standing once real users get their hands on them.
+
+- 🔭 &nbsp;**Right now** — building backend & information systems, and helping businesses go digital
+- 🧰 &nbsp;**I work with** — Java / Spring Boot, Python / Django, Flutter, PostgreSQL
+- 🌍 &nbsp;**Based in** — Douala, Cameroon · open to remote work
+- 💬 &nbsp;**Happy to talk about** — APIs, databases, or turning a manual process into software
 - 📫 &nbsp;**Reach me** — [abdelzidane3107@gmail.com](mailto:abdelzidane3107@gmail.com)
 
 ---
@@ -42,10 +44,11 @@ Software engineer based in **Douala, Cameroon**, ex-student at the **National Po
 
 **Languages**
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 **Backend & Frameworks**
 
@@ -54,20 +57,15 @@ Software engineer based in **Douala, Cameroon**, ex-student at the **National Po
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Keycloak](https://img.shields.io/badge/Keycloak-008AAA?style=for-the-badge&logo=keycloak&logoColor=white)
 
-**Mobile**
+**Web & Mobile**
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
-**Data & ML**
+**Databases & Tools**
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-
-**Tools & DevOps**
-
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
@@ -81,11 +79,11 @@ Software engineer based in **Douala, Cameroon**, ex-student at the **National Po
 
 | Project | Description | Tech |
 | :--- | :--- | :--- |
-| **[ATM Geolocation App](https://github.com/abdel3107/flutter-app-for-geolocalisation-of-ATMs)** ⭐ | Mobile app to locate nearby ATMs and show turn-by-turn directions to them. | `Flutter` · `Firebase` |
-| **[Personal Finance API](https://github.com/abdel3107/SpringBoot-Personal-Finance-API)** | REST API to track personal income, expenses and budgets. | `Java` · `Spring Boot` |
-| **[Personal Finance App](https://github.com/abdel3107/Flutter-Personal-Finance-App)** | Cross-platform mobile client for the finance API — a full-stack build. | `Dart` · `Flutter` |
-| **[Mail Invite System](https://github.com/abdel3107/simple-spring-boot-mail-invite-system-for-account-creation)** | Admin invites users by email; they receive a link to create their account. | `Java` · `Spring Boot` |
-| **[Flight Search App](https://github.com/abdel3107/Flight_Search_App)** | Android flight-search experience built with modern Kotlin. | `Kotlin` · `Android` |
+| **[ATM Finder](https://github.com/abdel3107/flutter-app-for-geolocalisation-of-ATMs)** ⭐ | Finds ATMs near you and gives directions to them. | `Flutter` · `Firebase` |
+| **[Personal Finance API](https://github.com/abdel3107/SpringBoot-Personal-Finance-API)** | A REST API for tracking income, expenses and budgets. | `Java` · `Spring Boot` |
+| **[Personal Finance App](https://github.com/abdel3107/Flutter-Personal-Finance-App)** | The mobile front-end for the finance API — the two make one app. | `Dart` · `Flutter` |
+| **[Mail Invite System](https://github.com/abdel3107/simple-spring-boot-mail-invite-system-for-account-creation)** | An admin invites people by email; they get a link to set up their own account. | `Java` · `Spring Boot` |
+| **[Flight Search App](https://github.com/abdel3107/Flight_Search_App)** | An Android app for searching flights, written in Kotlin. | `Kotlin` · `Android` |
 
 > 📌 More on my [pinned repositories](https://github.com/abdel3107?tab=repositories) and my [portfolio](https://www.pouotouo.engineer).
 
@@ -134,6 +132,6 @@ Software engineer based in **Douala, Cameroon**, ex-student at the **National Po
 
 <br/><br/>
 
-<sub>⚡ Thanks for visiting — let's build something that matters.</sub>
+<sub>Thanks for stopping by 👋 &nbsp;Got a project in mind? <a href="mailto:abdelzidane3107@gmail.com">Say hi</a>.</sub>
 
 </div>

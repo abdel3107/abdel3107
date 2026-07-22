@@ -34,8 +34,8 @@
     <!-- Left: identity -->
     <text x="74" y="108" font-size="15" font-weight="700" letter-spacing="3.2" fill="#4338CA">SOFTWARE ENGINEER · DOUALA, CAMEROON</text>
     <text x="72" y="172" font-size="52" font-weight="800" letter-spacing="-0.5" fill="url(#ink)">Pouotouo Abdel Zidane</text>
-    <text x="74" y="212" font-size="21" font-weight="600" fill="#565B72">Backend Systems &#160;•&#160; Flutter Apps &#160;•&#160; Machine Learning</text>
-    <text x="74" y="242" font-size="15" font-weight="500" fill="#6B7088">Building reliable software with clean architecture — for real-world impact.</text>
+    <text x="74" y="212" font-size="21" font-weight="600" fill="#565B72">Backend Systems &#160;·&#160; Web Platforms &#160;·&#160; Custom Software</text>
+    <text x="74" y="242" font-size="15" font-weight="500" fill="#6B7088">I build the systems, websites and tools that help businesses go digital.</text>
 
     <!-- Availability chip -->
     <g transform="translate(72,262)">
@@ -43,7 +43,7 @@
       <circle cx="24" cy="20" r="5.5" fill="#22A06B">
         <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
       </circle>
-      <text x="42" y="25" font-size="14" font-weight="700" fill="#1B7F53">Open to opportunities &amp; collaboration</text>
+      <text x="42" y="25" font-size="14" font-weight="700" fill="#1B7F53">Open to new projects &amp; roles</text>
     </g>
 
     <!-- Right: Zekora-style dashboard motif -->
