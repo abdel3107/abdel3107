@@ -15,11 +15,12 @@ because they depend on things that can only be set from your own dashboards:
 
 ## Step 1 — Migrate the `stats` project to github-stats-extended  (Vercel dashboard)
 
-> **If you hit `Build Failed — Root Directory "apps/backend" does not exist`:** that's
-> a branch mismatch, not a missing folder. `apps/backend` exists on **`master`**, but
-> your `stats` project's Production Branch is still **`main`** (left over from the old
-> github-readme-stats fork), so Vercel was building `main`, which has no `apps/backend`.
-> The fix is step **1c** below — set the Production Branch to `master`.
+> **Build errors you may see (both fixed by the steps below):**
+> - `Root Directory "apps/backend" does not exist` → branch mismatch, not a missing
+>   folder. `apps/backend` lives on **`master`**, but the project was building `main`.
+>   Fix = step **1c** (Production Branch → `master`).
+> - `ERROR Unknown option: 'legacy'` → Vercel is using an old pnpm; the build needs
+>   **pnpm 10**. Fix = step **1f** (enable Corepack so it honors the repo's pnpm pin).
 
 **1a. Fork the successor**
 - Fork **https://github.com/stats-organization/github-stats-extended** to your
@@ -51,12 +52,21 @@ because they depend on things that can only be set from your own dashboards:
   ever need to recreate it: GitHub → Settings → Developer settings → tokens →
   classic token with the **`repo`** scope so `count_private` works.)
 
-**1f. Turn off Deployment Protection** (Settings → *Deployment Protection*)
+**1f. Make Vercel use pnpm 10** (Settings → *Environment Variables*)  ← **fixes `Unknown option: 'legacy'`**
+- The build command uses `pnpm … --legacy … deploy`, and the `--legacy` flag only
+  exists in **pnpm 10+**. This repo pins `pnpm@10.34.1`, but Vercel defaults to an
+  older pnpm unless you enable Corepack (which makes it honor that pin). Add:
+
+  | Name                          | Value |
+  | ----------------------------- | ----- |
+  | `ENABLE_EXPERIMENTAL_COREPACK` | `1`  |
+
+**1g. Turn off Deployment Protection** (Settings → *Deployment Protection*)
 - Anonymous requests currently get a `403`, which blocks GitHub's image proxy. Set
   **Vercel Authentication** to **Disabled** for Production so the `.vercel.app` URL
   is publicly readable.
 
-**1g. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
+**1h. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
 
 **Verify:** open <https://stats-eight-beryl.vercel.app/api?username=abdel3107> in a
 private browser window — you should see your stats card (not an error card, not a
