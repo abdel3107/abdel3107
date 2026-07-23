@@ -15,33 +15,58 @@ because they depend on things that can only be set from your own dashboards:
 
 ## Step 1 — Migrate the `stats` project to github-stats-extended  (Vercel dashboard)
 
+> **Build errors you may see (both fixed by the steps below):**
+> - `Root Directory "apps/backend" does not exist` → branch mismatch, not a missing
+>   folder. `apps/backend` lives on **`master`**, but the project was building `main`.
+>   Fix = step **1c** (Production Branch → `master`).
+> - `ERROR Unknown option: 'legacy'` → Vercel is using an old pnpm; the build needs
+>   **pnpm 10**. Fix = step **1f** (enable Corepack so it honors the repo's pnpm pin).
+
 **1a. Fork the successor**
 - Fork **https://github.com/stats-organization/github-stats-extended** to your
   account (default branch `master`).
 
 **1b. Point your `stats` project at the fork** (Vercel → `stats` → Settings → *Git*)
 - Disconnect `abdel3107/stats` and connect your new `github-stats-extended` fork.
-  *(Prefer a clean slate? Create a brand-new Vercel project from the fork instead,
-  then send me its URL and I'll update the two README links.)*
+  Confirm the *Connected Git Repository* now shows the fork, not `abdel3107/stats`.
+  *(Prefer a clean slate? Create a brand-new Vercel project by **Importing** the fork
+  instead — the import flow lets you set branch + root dir + `PAT_1` up front. It gets
+  a new URL; send it to me and I'll update the two README links.)*
 
-**1c. Set the root directory** (Settings → *Build & Deployment* → *Root Directory*)
+**1c. Set the Production Branch to `master`** (Settings → *Git* → *Production Branch*)  ← **the build fix**
+- Change it from `main` to:
+
+  ```
+  master
+  ```
+
+**1d. Set the root directory** (Settings → *Build & Deployment* → *Root Directory*)
 - `github-stats-extended` is a monorepo — set **Root Directory** to:
 
   ```
   apps/backend
   ```
 
-**1d. Confirm the token** (Settings → *Environment Variables*)
+**1e. Confirm the token** (Settings → *Environment Variables*)
 - The **`PAT_1`** variable you already added carries over — leave it as is. (If you
   ever need to recreate it: GitHub → Settings → Developer settings → tokens →
   classic token with the **`repo`** scope so `count_private` works.)
 
-**1e. Turn off Deployment Protection** (Settings → *Deployment Protection*)
+**1f. Make Vercel use pnpm 10** (Settings → *Environment Variables*)  ← **fixes `Unknown option: 'legacy'`**
+- The build command uses `pnpm … --legacy … deploy`, and the `--legacy` flag only
+  exists in **pnpm 10+**. This repo pins `pnpm@10.34.1`, but Vercel defaults to an
+  older pnpm unless you enable Corepack (which makes it honor that pin). Add:
+
+  | Name                          | Value |
+  | ----------------------------- | ----- |
+  | `ENABLE_EXPERIMENTAL_COREPACK` | `1`  |
+
+**1g. Turn off Deployment Protection** (Settings → *Deployment Protection*)
 - Anonymous requests currently get a `403`, which blocks GitHub's image proxy. Set
   **Vercel Authentication** to **Disabled** for Production so the `.vercel.app` URL
   is publicly readable.
 
-**1f. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
+**1h. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
 
 **Verify:** open <https://stats-eight-beryl.vercel.app/api?username=abdel3107> in a
 private browser window — you should see your stats card (not an error card, not a
