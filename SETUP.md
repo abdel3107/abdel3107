@@ -15,33 +15,48 @@ because they depend on things that can only be set from your own dashboards:
 
 ## Step 1 — Migrate the `stats` project to github-stats-extended  (Vercel dashboard)
 
+> **If you hit `Build Failed — Root Directory "apps/backend" does not exist`:** that's
+> a branch mismatch, not a missing folder. `apps/backend` exists on **`master`**, but
+> your `stats` project's Production Branch is still **`main`** (left over from the old
+> github-readme-stats fork), so Vercel was building `main`, which has no `apps/backend`.
+> The fix is step **1c** below — set the Production Branch to `master`.
+
 **1a. Fork the successor**
 - Fork **https://github.com/stats-organization/github-stats-extended** to your
   account (default branch `master`).
 
 **1b. Point your `stats` project at the fork** (Vercel → `stats` → Settings → *Git*)
 - Disconnect `abdel3107/stats` and connect your new `github-stats-extended` fork.
-  *(Prefer a clean slate? Create a brand-new Vercel project from the fork instead,
-  then send me its URL and I'll update the two README links.)*
+  Confirm the *Connected Git Repository* now shows the fork, not `abdel3107/stats`.
+  *(Prefer a clean slate? Create a brand-new Vercel project by **Importing** the fork
+  instead — the import flow lets you set branch + root dir + `PAT_1` up front. It gets
+  a new URL; send it to me and I'll update the two README links.)*
 
-**1c. Set the root directory** (Settings → *Build & Deployment* → *Root Directory*)
+**1c. Set the Production Branch to `master`** (Settings → *Git* → *Production Branch*)  ← **the build fix**
+- Change it from `main` to:
+
+  ```
+  master
+  ```
+
+**1d. Set the root directory** (Settings → *Build & Deployment* → *Root Directory*)
 - `github-stats-extended` is a monorepo — set **Root Directory** to:
 
   ```
   apps/backend
   ```
 
-**1d. Confirm the token** (Settings → *Environment Variables*)
+**1e. Confirm the token** (Settings → *Environment Variables*)
 - The **`PAT_1`** variable you already added carries over — leave it as is. (If you
   ever need to recreate it: GitHub → Settings → Developer settings → tokens →
   classic token with the **`repo`** scope so `count_private` works.)
 
-**1e. Turn off Deployment Protection** (Settings → *Deployment Protection*)
+**1f. Turn off Deployment Protection** (Settings → *Deployment Protection*)
 - Anonymous requests currently get a `403`, which blocks GitHub's image proxy. Set
   **Vercel Authentication** to **Disabled** for Production so the `.vercel.app` URL
   is publicly readable.
 
-**1f. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
+**1g. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
 
 **Verify:** open <https://stats-eight-beryl.vercel.app/api?username=abdel3107> in a
 private browser window — you should see your stats card (not an error card, not a
