@@ -3,44 +3,49 @@
 Almost everything is wired up. Two cards need a small one-time action from you,
 because they depend on things that can only be set from your own dashboards:
 
-- The **GitHub stats** and **Top languages** cards are served by your existing Vercel
-  project **`stats`** (your private fork `abdel3107/stats` of `github-readme-stats`),
-  live at **https://stats-eight-beryl.vercel.app**. It's deployed and running, but
-  it needs a GitHub token and needs to be publicly reachable.
+- The **GitHub stats** and **Top languages** cards are served by your Vercel project
+  **`stats`**, live at **https://stats-eight-beryl.vercel.app**. We're migrating it
+  from the now-unmaintained `github-readme-stats` to its maintained successor,
+  **[`github-stats-extended`](https://github.com/stats-organization/github-stats-extended)**.
+  The two are API-identical and use the same `PAT_1` token, so this reuses the token
+  you already added and **keeps the same URLs — the README needs no change.**
 - The **snake animation** needs its workflow to run once.
-
-The README already points at the right URLs — do the two steps below and the cards
-light up with no further edits.
 
 ---
 
-## Step 1 — Make the `stats` project work  (Vercel dashboard)
+## Step 1 — Migrate the `stats` project to github-stats-extended  (Vercel dashboard)
 
-Open the **`stats`** project → **Settings**.
+**1a. Fork the successor**
+- Fork **https://github.com/stats-organization/github-stats-extended** to your
+  account (default branch `master`).
 
-**1a. Add the GitHub token** (Settings → *Environment Variables*)
+**1b. Point your `stats` project at the fork** (Vercel → `stats` → Settings → *Git*)
+- Disconnect `abdel3107/stats` and connect your new `github-stats-extended` fork.
+  *(Prefer a clean slate? Create a brand-new Vercel project from the fork instead,
+  then send me its URL and I'll update the two README links.)*
 
-First create the token:
-- Go to **https://github.com/settings/tokens** → *Generate new token (classic)*.
-- Tick the **`repo`** scope (so private-contribution counts work), generate, copy it.
+**1c. Set the root directory** (Settings → *Build & Deployment* → *Root Directory*)
+- `github-stats-extended` is a monorepo — set **Root Directory** to:
 
-Then in Vercel add:
+  ```
+  apps/backend
+  ```
 
-| Name    | Value                | Environments        |
-| ------- | -------------------- | ------------------- |
-| `PAT_1` | *your `ghp_…` token* | Production (+ all)  |
+**1d. Confirm the token** (Settings → *Environment Variables*)
+- The **`PAT_1`** variable you already added carries over — leave it as is. (If you
+  ever need to recreate it: GitHub → Settings → Developer settings → tokens →
+  classic token with the **`repo`** scope so `count_private` works.)
 
-**1b. Turn off Deployment Protection** (Settings → *Deployment Protection*)
+**1e. Turn off Deployment Protection** (Settings → *Deployment Protection*)
+- Anonymous requests currently get a `403`, which blocks GitHub's image proxy. Set
+  **Vercel Authentication** to **Disabled** for Production so the `.vercel.app` URL
+  is publicly readable.
 
-Right now anonymous requests get a `403`, which blocks GitHub's image proxy. Set
-**Vercel Authentication** to **Disabled** (Standard Protection can stay off) for
-Production so the `.vercel.app` URL is publicly readable.
+**1f. Redeploy** — *Deployments* tab → latest → **⋯ → Redeploy** (or push to the fork).
 
-**1c. Redeploy** so the new token takes effect: *Deployments* tab → latest one →
-**⋯ → Redeploy**.
-
-Verify: open <https://stats-eight-beryl.vercel.app/api?username=abdel3107> in a private
-browser window — you should see your stats card (not an error, not a login wall).
+**Verify:** open <https://stats-eight-beryl.vercel.app/api?username=abdel3107> in a
+private browser window — you should see your stats card (not an error card, not a
+login wall).
 
 ---
 
